@@ -30,5 +30,5 @@ stages:
           command: buildAndPush
           repository: ${{ variables. repository }}
           dockerfile: ${{ variables.dockerfile }}
-          Registry: ${{ variables.acr }}
+          containerRegistry: ${{ variables.acr }}
           tags: $(Build.BuildId)
