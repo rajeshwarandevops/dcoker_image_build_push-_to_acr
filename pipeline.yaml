@@ -11,7 +11,7 @@ variables:
    value: 'kbbrajeshazdevops'
  - name: dockerfile
    value: '$(Build.SourcesDirectory)/aspnet-core-dotnet-core/Dockerfile'
- - name: acrconnection
+ - name: acr
    value: 'acrkbbazdevops2731-acr-connection'
 
 
@@ -30,5 +30,5 @@ stages:
           command: buildAndPush
           repository: ${{ variables. repository }}
           dockerfile: ${{ variables.dockerfile }}
-          containerRegistry: ${{ variables.acracrconnection }}
+          containerRegistry: ${{ variables.acr }}
           tags: $(Build.BuildId)
