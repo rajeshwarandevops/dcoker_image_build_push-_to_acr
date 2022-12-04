@@ -11,7 +11,7 @@ variables:
    value: 'kbbrajeshazdevops'
  - name: dockerfile
    value: '$(Build.SourcesDirectory)/aspnet-core-dotnet-core/Dockerfile'
- - name: acr 
+ - name: acrconnection
    value: 'acrkbbazdevops2731-acr-connection'
 
 
