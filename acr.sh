@@ -1,3 +1,5 @@
+#/bin/bash
+
 ACR_RESOURCE_GROUP_NAME="rg-kbbrajesh-azdevops-acrimage"
 ACR_NAME="acrkbbazdevops2731"
 
